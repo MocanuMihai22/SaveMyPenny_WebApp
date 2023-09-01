@@ -1,0 +1,584 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Libre Baskerville', serif;
+}
+
+li{
+list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color:#0B72FD;
+}
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color:#fff;
+    overflow: hidden;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 5px 30px;
+    font-size: 15px;
+}
+.nav-element{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-left: 40px;
+}
+.nav-element-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.round-nav-element{
+    text-decoration: none;
+    border: 2px solid  #0B72FD;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #0B72FD;
+}
+
+
+.round-nav-element-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    color:#0B72FD;
+    margin-left: 3%;
+}
+.logo-span{
+    font-family: 'Cutive', serif;
+    color:#0B72FD;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* TRYING STYCKY NAVBAR */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #0B72FD;
+  }
+.padding{
+    padding-top: 60px;
+}
+.white-on-scroll{
+    color:#fff;
+}
+.round-element-to-white{
+    border: 2px solid  #fff;
+    color: #fff;
+}
+
+/* HEADER */
+#text-box{
+    margin-top: 130px;
+    max-width: 700px;
+    text-align: center;
+}
+#text-box h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#text-box a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #fff;
+    color: #0B72FD;
+    /* background-color: #0B72FD; */
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+#text-box p{
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-weight: 400;
+    opacity: 0.5;
+    color: #fff;
+}
+.phone-img img{
+    width: 300px;
+    height: 350px;
+}
+
+.card-img img{
+    width: 250px;
+    height: 170px; 
+    margin: 30px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+/* Transition animation */
+.hidden {
+    opacity: 0;
+    transform: translateX(-60%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* PAGE 1 */
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1{
+    background-color: #fff;
+}
+.page2{
+    background-color: #f0f8ff;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* APPLICATION */
+
+form{
+    text-align: center;
+    margin: 10px;
+    font-weight: 600;
+}
+
+#form-container{
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border:0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+#budget-chart{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+#expenses-chart{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+#inputs-section{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fafafa;
+    border:0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+}
+input:hover {
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+button{
+    padding:8px 15px;
+    border:none;
+    background-color:#0B72FD;
+    color:#fff;
+    font-size: 15px;
+    border-radius:10px;
+    width: 33%;
+}
+.inputAndChart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#chart-container{
+    width: 500px;
+
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.card{
+    margin: 20px;
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; 
+    height: 300px;
+}
+.card-body{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* NEXT PAGES */
+
+.page2-img{
+    box-sizing: border-box;
+    margin-right: -70px;
+}
+#budget-input-img{
+    width: 600px;
+    height: 400px;
+    
+}
+#paragraf-container{
+    max-width: 600px;
+    height: 250px;
+    text-align:start;
+   
+}
+#paragraf-container2{
+    max-width: 600px;
+    height: 250px;
+    text-align: end;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#paragraf-container2 p, #paragraf-container p{
+    margin-top: 30px;
+    opacity: 0.5;
+  
+}
+#uxpin-expenses-chart-img{
+    width: 650px;
+    height: 400px;
+}
+
+footer{
+    height: 50vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer div{
+    width: 50%;
+    text-align: center;
+}
+footer p{
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-top: 40px;
+}
+footer a{
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    margin-top: 30px;
+}
+#last-div{
+    height: 10vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+#last-div a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.507);
+    margin: 10px;
+    font-size: 1.2rem;
+}
+#last-div ul{
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_menu{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.4s;
+    z-index: 4;
+    }
+   
+.dropdown_menu li{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    line-height: 2px;
+    z-index: 4;
+    background-color: white;
+    }
+.dropdown_menu a{
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    color: #0B72FD;
+    }
+   
+.menu-open{
+    left: 0;
+        
+    }
+.toggle_btn, .toggle_btn2{
+    color: #0B72FD;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    }
+
+.dropdown_menu_logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+.li_items_dropdown_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.li_items_dropdown_menu li a:hover{
+    color: black;
+    transition: 0.2s;
+}
+
+#round_items_dropdown_menu{
+    display: flex;
+    justify-content: center;
+}
+
+    /* MEDIA SCREEN */
+
+@media screen and (max-width: 1300px){
+.nav-element-container, .round-nav-element-container{
+    display: none;
+    }
+.toggle_btn, .toggle_btn2{
+    display: block;
+    margin-right: 30px;
+}
+.white{
+    color: #fff;
+}
+}
+
+@media screen and (max-width: 1220px){
+    /* HEADER */
+#text-box{
+    margin-top: 50px;
+    max-width: 700px;
+    text-align: center;
+}
+#text-box h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#text-box a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #fff;
+    color: #0B72FD;
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+#text-box p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-weight: 400;
+    opacity: 0.5;
+    color: #fff;
+}
+.phone-img img{
+    width: 230px;
+    height: 275px;
+}
+
+.card-img img{
+    width: 175px;
+    height: 120px; 
+    margin: 70px;
+}
+.page{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#paragraf-container2 p, #paragraf-container p, #paragraf-container2 h1, #paragraf-container h1{
+    text-align: center;
+}
+
+
+#uxpin-expenses-chart-img, #budget-input-img{
+    width: 325px;
+    height: 200px; 
+}
+}
+
+
+@media screen and (max-width: 970px){
+    #text-box{
+        margin-top: 50px;
+        max-width: 700px;
+        text-align: center;
+    }
+    .card-img img{
+        display: none;
+    }
+    .logo, .toggle_btn, .toggle_btn2{
+        font-size: 25px;
+    }
+
+}
+@media screen and (orientation:landscape)
+and (max-device-width: 830px) {
+      header{
+        height: 120vh;
+    }
+    footer{
+        height: 75vh;
+    }
+    .section{
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 670px){
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        position: absolute;
+        width: 100%;
+    }
+ 
+    #text-box{
+        margin-top: 50px;
+        max-width: 700px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #text-box h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    #text-box a{
+        text-decoration: none;
+        display: inline-block;
+        background-color: #fff;
+        color: #0B72FD;
+        /* background-color: #0B72FD; */
+        padding: 10px 30px;
+        font-size: 15px;
+        margin-top: 35px;
+        border-radius: 10px;
+    }
+    #text-box p{
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0;
+        font-weight: 400;
+        opacity: 0.5;
+        color: #fff;
+    }
+    .phone-img img{
+        margin-top: 20px;
+        width: 230px;
+        height: 275px;
+    }
+    .logo, .toggle_btn, .toggle_btn2{
+        font-size: 20px;
+    }
+  
+    footer h1{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size: 13px;
+    }
+    footer a{
+        margin-top: 20px 0;
+    }
+    footer div{
+        width: 85%;
+        text-align: center;
+    }
+    #paragraf-container2 , #paragraf-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #paragraf-container2{
+        margin-top: 50px;
+    }
+    #paragraf-container:nth-child(2){
+        margin-bottom: 50px;
+    }
+    #round_items_dropdown_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+}

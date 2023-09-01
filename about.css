@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    }
+    li{
+    list-style: none;
+    }
+
+    /* NAVBAR */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color:#fff;
+    overflow: hidden;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 5px 30px;
+    font-size: 15px;
+}
+.nav-element{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-left: 40px;
+}
+.nav-element-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round-nav-element{
+    text-decoration: none;
+    border: 2px solid  #0B72FD;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #0B72FD;
+}
+
+
+.round-nav-element-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    color:#0B72FD;
+    margin-left: 5%;
+}
+.logo-span{
+    font-family: 'Cutive', serif;
+    color:#0B72FD;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+
+.section{
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section p{
+    width: 70%;
+    text-align: left;
+    font-size: 1.5rem;
+    opacity: 0.5;
+    
+}
+.section h1{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.dropdown_menu{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.4s;
+    z-index: 4;
+    }
+   
+.dropdown_menu li{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    line-height: 2px;
+    z-index: 4;
+    background-color: white;
+    }
+.dropdown_menu a{
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    color: #0B72FD;
+    }
+   
+.menu-open{
+    left: 0;
+        
+    }
+.toggle_btn, .toggle_btn2{
+    color: #0B72FD;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    }
+
+.dropdown_menu_logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+.li_items_dropdown_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.li_items_dropdown_menu li a:hover{
+    color: black;
+    transition: 0.2s;
+}
+
+#round_items_dropdown_menu{
+    display: flex;
+    justify-content: center;
+}
+
+    
+footer{
+    height: 50vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer div{
+    width: 50%;
+    text-align: center;
+}
+footer p{
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-top: 40px;
+}
+footer a{
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    margin-top: 30px;
+}
+#last-div{
+    height: 10vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+#last-div a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.507);
+    margin: 10px;
+    font-size: 1.2rem;
+}
+#last-div ul{
+    display: flex;
+    justify-content: center;
+}
+
+    /* MEDIA SCREEN */
+
+@media screen and (max-width: 1300px){
+.nav-element-container, .round-nav-element-container{
+    display: none;
+    }
+.toggle_btn, .toggle_btn2{
+    display: block;
+    margin-right: 30px;
+}
+.white{
+    color: #fff;
+}
+}
+
+@media screen and (max-width: 970px){
+    .logo, .toggle_btn, .toggle_btn2{
+        font-size: 25px;
+    }
+    
+.section p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.section h1{
+    font-size: 1.5rem; 
+}
+
+}
+
+
+@media screen and (max-width: 670px){
+    footer h1{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size: 13px;
+    }
+    footer a{
+        margin-top: 20px 0;
+    }
+    footer div{
+        width: 85%;
+        text-align: center;
+    }
+    .logo, .toggle_btn, .toggle_btn2{
+        font-size: 20px;
+    }
+    #round_items_dropdown_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (orientation:landscape)
+and (max-device-width: 830px) {
+  footer{
+      height: 70vh;
+  }
+}

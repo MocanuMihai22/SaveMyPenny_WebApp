@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplication</title>
+    <link rel="icon" href="images/chart-simple-solid.svg">
+
+    <link rel="stylesheet" href="app-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="app-main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+<!-- CHART.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo"><i class="fa-solid fa-chart-simple"></i><span class="logo-span">SaveMyPenny</span></div>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="nav-element-container">
+            <ul><li><a href="index.html" class="nav-element">Home</a></li>
+                <li><a href="About.html" class="nav-element">About us</a></li>
+                <li><a href="app.html" class="nav-element">Get started</a></li>
+            </ul>   
+        </div>
+           
+        <div class="round-nav-element-container">
+            <ul>
+            <li><a href="Rules.html" class="round-nav-element"><i style="margin-right: 10px;" class="fa-solid fa-scale-balanced"></i>Magic Rules</a></li>
+            <li><a href="signup.html" class="round-nav-element"><i style="margin-right: 10px;" class="fa-solid fa-circle-plus"></i>Newsletter</a></li> 
+            </ul>  
+        </div>
+    </nav>
+
+    <div class="dropdown_menu">
+        <div class="dropdown_menu_logo">
+        <div class="logo"><i class="fa-solid fa-chart-simple"></i><span class="logo-span">SaveMyPenny</span></div>
+        <div class="toggle_btn2"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="li_items_dropdown_menu">
+            <li><a href="index.html" class="nav-element">Home</a></li>
+            <li><a href="About.html" class="nav-element">About us</a></li>
+            <li><a href="app.html" class="nav-element">Get started</a></li>
+        <div id="round_items_dropdown_menu">
+            <li><a href="Rules.html" class="round-nav-element"><i style="margin-right: 10px;" class="fa-solid fa-scale-balanced"></i>Magic Rules</a></li>
+            <li><a href="signup.html" class="round-nav-element"><i style="margin-right: 10px;" class="fa-solid fa-circle-plus"></i>Newsletter</a></li> 
+        </div>
+    </div>
+      </div>
+
+     <!-- THE APPLICATION -->
+     <div class="section" id="inputs-section">
+
+        <div id="part1">
+
+<!-- BUDGET INPUT AND CHART -->
+
+        <div class="inputAndChart">
+        <div id="form-container">
+        <label for="form1"><h3>BUDGET</h3></label>
+        <form id="form1" >
+            <div class="form-group">
+                <label>Amount</label><br>
+                <input type="number" id="budgetAmount" step=".01"><br>
+                <label>Source</label><br>
+                <input type="text" id="budgetSource"><br>
+            </div><br>
+           
+            <button type="submit" id="button1">Add</button>
+        </form>
+    </div>
+    <div id="budget-chart">
+        <canvas id="BudgetChart"></canvas>
+    </div>
+</div>
+
+<!-- EXPENSES INPUT AND CHART -->
+
+<div class="inputAndChart">
+    <div id="form-container">
+    <label for="form2"><h3>EXPENSES</h3></label>
+    <form id="form2" >
+        <div class="form-group">
+            <label>Amount</label><br>
+            <input type="number" id="expensesAmount" step=".01"><br>
+            <label>Source</label><br>
+            <input type="text" id="expensesSource"><br>
+        </div><br>
+       
+        <button type="submit" id="button1">Add</button>
+    </form>
+</div>
+<div id="expenses-chart">
+    <canvas id="ExpensesChart"></canvas>
+</div>
+</div>
+</div>
+
+
+<div id="chart-container">
+    <canvas id="myChart"></canvas>
+    <div class="cards-container">
+        <div id="cards">
+        <div>
+            <div class="card">
+                <div class="card-body">
+                    <h4>BUDGET</h4>
+                    <i class="fa-sharp fa-solid fa-wallet" style="color: blue;"></i>
+                    <span id="budget">0</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <div class="card-body">
+                    <h4>EXPENSES</h4>
+                    <i class="fa-solid fa-money-bill" style="color: red;"></i>
+                    <span id="expenses">0</span>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div>
+            <div class="card">
+                <div class="card-body">
+                    <h4>SAVINGS</h4>
+                    <i class="fa-solid fa-coins" style="color: green;"></i>
+                    <span id="total">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </div> 
+    </div>
+
+    <footer>
+        <div>
+    <h1>Start now and Save your penny!</h1>
+    <p>So what are you waiting for? Join over 2 million people who’ve found a better way to manage their money online.  </p>
+    
+    </div>
+    <a href="app.html">Get started</a>
+    </footer>
+    <div id="last-div">
+        <ul>
+            <li><a target="_blank" href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
+            
+        </ul>
+    </div>
+</body>
+</html>
